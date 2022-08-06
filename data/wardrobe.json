@@ -1,0 +1,29 @@
+{
+     "amount": 485.94,
+     "clothing": [
+          {
+               "colour": "Blue",
+               "material": "Wool",
+               "size": "S",
+               "price": 5.99,
+               "description": "Socks",
+               "brand": "Calvin Klein"
+          },
+          {
+               "colour": "Green",
+               "material": "Cotton",
+               "size": "M",
+               "price": 89.99,
+               "description": "Hoodie",
+               "brand": "Palace"
+          },
+          {
+               "colour": "Black",
+               "material": "POlyester",
+               "size": "M",
+               "price": 89.99,
+               "description": "Shirt",
+               "brand": "Uniqlo"
+          }
+     ]
+}

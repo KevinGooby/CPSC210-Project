@@ -1,0 +1,29 @@
+{
+  "amount": 23.98,
+  "clothing": [
+    {
+      "colour": "Red",
+      "price": 5.99,
+      "brand": "H&M",
+      "material": "wool",
+      "size": "S",
+      "description": "Sweater"
+    },
+    {
+      "colour": "Blue",
+      "price": 7.99,
+      "brand": "Hugo Boss",
+      "material": "polyester",
+      "size": "M",
+      "description": "Hoodie"
+    },
+    {
+      "colour": "Green",
+      "price": 10.00,
+      "brand": "Supreme",
+      "material": "cotton",
+      "size": "L",
+      "description": "T-shirt"
+    }
+  ]
+}
