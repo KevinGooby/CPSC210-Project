@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import org.json.JSONObject;
 import org.json.JSONArray;
 import persistence.Writable;
+import java.util.Observable;
+import java.util.Observer;
 
-public class Wardrobe implements Writable {
+public class Wardrobe extends Observable implements Writable {
     private ArrayList<Clothing> myWardrobe;
     private double amount;
 
@@ -15,6 +17,7 @@ public class Wardrobe implements Writable {
     public Wardrobe() {
         myWardrobe = new ArrayList<>();
         amount = 0.00;
+        addObserver(EventLog.getInstance());
     }
 
     // REQUIRES: none
@@ -23,7 +26,8 @@ public class Wardrobe implements Writable {
     public void addClothing(Clothing clothing) {
         myWardrobe.add(clothing);
         amount += clothing.getPrice();
-        EventLog.getInstance().logEvent(new Event(clothing.getDescription() + " added to wardrobe"));
+        setChanged();
+        notifyObservers(new Event(clothing.getDescription() + " added to wardrobe"));
     }
 
     // REQUIRES: none
@@ -76,7 +80,8 @@ public class Wardrobe implements Writable {
     // EFFECTS: Removes given piece of clothing from myWardrobe
     public void removeClothing(Clothing clothing) {
         myWardrobe.remove(clothing);
-        EventLog.getInstance().logEvent(new Event(clothing.getDescription() + " removed"));
+        setChanged();
+        notifyObservers(new Event(clothing.getDescription() + " removed"));
     }
 
     public double getAmount() {
@@ -96,12 +101,10 @@ public class Wardrobe implements Writable {
     private JSONArray clothingToJson() {
         JSONArray jsonArray = new JSONArray();
 
-        for (Clothing clothing: myWardrobe) {
+        for (Clothing clothing : myWardrobe) {
             jsonArray.put(clothing.toJson());
         }
 
         return jsonArray;
     }
-
-
 }

@@ -3,6 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.Observer;
+import java.util.Observable;
 
 /**
  * Represents a log of alarm system events.
@@ -10,7 +12,7 @@ import java.util.Iterator;
  * one EventLog in the system and that the system has global access
  * to the single instance of the EventLog.
  */
-public class EventLog implements Iterable<Event> {
+public class EventLog implements Iterable<Event>, Observer {
     /** the only EventLog in the system (Singleton Design Pattern) */
     private static EventLog theLog;
     private Collection<Event> events;
@@ -50,6 +52,11 @@ public class EventLog implements Iterable<Event> {
     public void clear() {
         events.clear();
         logEvent(new Event("Event log cleared."));
+    }
+
+    @Override
+    public void update(Observable o, Object event) {
+        logEvent((Event) event);
     }
 
     // EFFECTS: Returns events as an Iterator
