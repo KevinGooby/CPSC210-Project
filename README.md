@@ -4,7 +4,7 @@ MyWardrobe is a Java Desktop application to keep track of clothing items in your
 
 ## :book: Learnings
 
-This is an academic project for [CPSC 210](https://www.cs.ubc.ca/course-section/cpsc-210-101-2023w), my university's course to learn about Object-oriented programming (OOP), data abstractions, and design patterns. Below are the key lessons I learned.
+This is an academic project for [CPSC 210](https://www.cs.ubc.ca/course-section/cpsc-210-101-2023w), my university's course about Object-oriented programming (OOP), data abstractions, and design patterns. Below are the key lessons I learned.
 
 | Concept | Learnings |
 |:---|:---|
