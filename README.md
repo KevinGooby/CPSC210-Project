@@ -1,10 +1,34 @@
-# My personal project!
+# 👕 MyWardrobe
+
+MyWardrobe is a Java Desktop application to keep track of clothing items in your wardrobe.
+
+## :book: Learnings
+
+This is an academic project for [CPSC 210](https://www.cs.ubc.ca/course-section/cpsc-210-101-2023w), my university's course to learn about Object-oriented programming (OOP), data abstractions, and design patterns. Below are the key lessons I learned.
+
+| Concept | Learnings |
+|:---|:---|
+| [Java](https://www.java.com/en/) | This was my first time using Java. It was amazing to learn the new language and learn important concepts like design patterns, classes, abstractions, interfaces, inheritance, etc.|
+| [Design Patterns](https://refactoring.guru/design-patterns) | I enjoyed learning about design patterns like the Singleton, Observer, Composite and Iterator design patterns. Even more enjoyable was integrating them and refactoring my code to use them!|
+| Unit testing and [JUnit](https://junit.org/junit5/) | This was my introduction to code quality assurance and writing tests to identify bugs and issues EARLY in the development cycle. It helped my debugging tremendously and implementing 100% test coverage taught me how to cover edge cases, redundant code and refactor effectively.|
+| [UML diagrams](https://www.uml-diagrams.org/) | I learned how to draw UML diagrams to visualize the system architecture. I'm still looking for the actual diagram itself... stay tuned! 😄|
+| [Java Swing](https://en.wikipedia.org/wiki/Swing_(Java)) | I learned the Java Swing library to implement a GUI!|
+| Persistence with [JSON](https://www.json.org/json-en.html) | I used JSON to store wardrobe information across sessions and enhances the user experience.|
+
+## :city_sunrise: Future Features + Considerations
+[Summer 2024]: Considerations are listed below in the academic project documentation!
+
+## 🏫 School Documentation 
+
+Below are the reports, checkpoints, and documentation I wrote up for my class!
+
+# My personal project: MyWardrobe!
 
 ### For CPSC 210 - y2x7s
 
 Hello there!
 
-For my CPSC 210 project I wanted to create a **wardrobe manager app** and to keep track of your clothing!
+For my CPSC 210 project I wanted to create a **wardrobe manager app** and to keep track of clothing!
 
 **What will the application do?**
 
@@ -94,9 +118,4 @@ Moreover, another change that I would like to make is to include more Exceptions
 Looking at many of the REQUIRES/MODIFIES/EFFECTS clauses, some methods rely on the REQUIRES clause. However,
 to make the code more **robust**, I could handle and execute code based on these Exceptions instead of 
 relying on the REQUIRES clauses.
-
-
-
- 
-
 
