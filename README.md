@@ -1,6 +1,6 @@
 # 👕 MyWardrobe
 
-MyWardrobe is a Java Desktop application to keep track of clothing items in your wardrobe.
+MyWardrobe is a Java Desktop application to track wardrobe clothing items.
 
 ## :book: Learnings
 
